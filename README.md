@@ -12,3 +12,7 @@ LeetCode solutions in Python | My DSA journey
 **Approach:** Greedy Algorithm- add the profit whenever the price increases from previous day without worrying about the future by pairing the first two consecutive pair.
 **Time:** O(n) | ** Space:**O(1)
 **Learning:**- arnt what actually Greedy algorithm is , multiple transcations are allowed so capture every upward price movement instead of finding single best buy-sell pair.
+## 4 Move Zeroes
+**Approach:** Two Pointer — track position for next non-zero element, swap when found
+**Time:** O(n) | **Space:** O(1)
+**Learning:** Two-pointer isn't greedy — no profit/optimization decision, just position management while traversing
