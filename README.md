@@ -15,4 +15,4 @@ LeetCode solutions in Python | My DSA journey
 ## 4 Move Zeroes
 **Approach:** Two Pointer — track position for next non-zero element, swap when found
 **Time:** O(n) | **Space:** O(1)
-**Learning:** Two-pointer isn't greedy — no profit/optimization decision, just position management while traversing
+**Learning:** Two-pointer isn't greedy — no profit/optimization decision, just position management while traversing.
