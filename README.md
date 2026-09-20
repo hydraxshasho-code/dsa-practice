@@ -10,7 +10,7 @@ LeetCode solutions in Python | My DSA journey
 
 ## 2 Best time to buy and sell stock II
 **Approach:** Greedy Algorithm- add the profit whenever the price increases from previous day without worrying about the future by pairing the first two consecutive pair.
-**Time:** O(n) | ** Space:**O(1)
+**Time:** O(n) | ** Space:*O(1)
 **Learning:**- arnt what actually Greedy algorithm is , multiple transcations are allowed so capture every upward price movement instead of finding single best buy-sell pair.
 
 ## 3 Best Time to Buy and Sell Stock I
@@ -26,3 +26,7 @@ LeetCode solutions in Python | My DSA journey
 **Approach:** Three Pointer — track prev, current, and next node while reversing links iteratively
 **Time:** O(n) | **Space:** O(1)
 **Learning:** Learned linked list fundamentals (nodes linked via pointers, no direct index access) and the three-pointer technique for reversal
+## 6 Longest Substring Without Repeating Characters
+**Approach:** Sliding Window — two pointers (left, right) with a set tracking characters in current window; shrink window from left when duplicate found ( learned for the first time)
+**Time:**a O(n) | **Space:** O(min(n, 26))
+**Learning:** set() alone gives unique characters overall, not the longest continuous substring — needed sliding window to track a continuous, valid stretch
