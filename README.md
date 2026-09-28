@@ -30,3 +30,4 @@ LeetCode solutions in Python | My DSA journey
 **Approach:** Sliding Window — two pointers (left, right) with a set tracking characters in current window; shrink window from left when duplicate found ( learned for the first time)
 **Time:**a O(n) | **Space:** O(min(n, 26))
 **Learning:** set() alone gives unique characters overall, not the longest continuous substring — needed sliding window to track a continuous, valid stretch
+
