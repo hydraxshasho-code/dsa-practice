@@ -31,3 +31,12 @@ LeetCode solutions in Python | My DSA journey
 **Time:**a O(n) | **Space:** O(min(n, 26))
 **Learning:** set() alone gives unique characters overall, not the longest continuous substring — needed sliding window to track a continuous, valid stretch
 
+## 7 Reverse String
+**Approach:** Two Pointer — one pointer at the start, one at the end, swap and move inward until they meet
+**Time:** O(n) | **Space:** O(1)
+**Learning:** In-place modification means no extra array; the swap `s[x], s[y] = s[y], s[x]` handles it without a temp variable
+
+## 8 Palindrome Number
+**Approach:** Convert to string, reverse with slicing (`[::-1]`), compare with the original
+**Time:** O(n) | **Space:** O(n) — n is the number of digits
+**Learning:** Negative numbers are never palindromes (the `-` sign breaks the match); simplify to `return z == z[::-1]` instead of an if/else
