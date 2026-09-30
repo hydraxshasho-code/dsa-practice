@@ -5,3 +5,8 @@ class Solution:
             if i not in nums:
                 return i
 
+#solution 2nd try
+class Solution:
+    def missingNumber(self, nums: list[int]) -> int:
+        n = len(nums)
+        return (n * (n + 1)) // 2 - sum(nums)
