@@ -46,4 +46,7 @@ LeetCode solutions in Python | My DSA journey
 **Time:** O(n²) (`in` on a list scans it every iteration) | **Space:** O(1)
 **Approach 2:** Math — expected sum `n(n+1)//2` minus actual `sum(nums)` gives the missing value
 **Time:** O(n) | **Space:** O(1)
-**Learning:** The range must go to `len(nums)` inclusive, because the missing number can be `n` itself. Always `return`, never `print`. The sum trick works because the input is guaranteed distinct values in `0..n`.
+**Learning:** The range must go to `len(nums)` inclusive, because the missing number can be `n` itself. Always `return`, never `print`. The sum trick works because the input is guaranteed distinct values in `0..n`.e
+## ## 10 Find All Numbers Disappeared in an Array
+**Time:** O(n) | **Space:** O(n)
+**Learning:** `if i not in list` inside a loop takes O(n^2) because list lookup scans linearly every time[cite: 10, 12]. Converting `nums` to a `set` drops lookups to O(1) average time, bringing total complexity to O(n)[cite: 10, 12].
