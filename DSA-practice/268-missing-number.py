@@ -10,3 +10,15 @@ class Solution:
     def missingNumber(self, nums: list[int]) -> int:
         n = len(nums)
         return (n * (n + 1)) // 2 - sum(nums)
+    
+#college solutions
+class Solution:
+    def missingNumber(self, nums: list[int]) -> int:
+        n=len(nums)
+        expected_sum=n*(n+1)//2
+        actual_sum=0
+        for x in nums:
+            actual_sum+=x
+        missing=expected_sum-actual_sum
+        return missing
+        
